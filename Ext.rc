@@ -1,0 +1,371 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "ccx.h"
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+1 VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x0L
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x10001L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Anders Riggelsen\0"
+            VALUE "FileDescription", "Perspective Object\0"
+            VALUE "FileVersion", "2.01\0"
+            VALUE "InternalName", "Perspective object\0"
+            VALUE "LegalCopyright", "Copyright © 2007 Anders Riggelsen\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Perspective.mfx\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "00000002\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+
+KPX_MAGICNUMBER RCDATA MOVEABLE PURE 
+BEGIN
+    0x2516, 0x5908
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+EXO_ICON$(EDITOR)       BITMAP  MOVEABLE PURE   "EXTICON.BMP"
+#else
+EXO_ICON                BITMAP  MOVEABLE PURE   "EXTICON.BMP"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+EXO_IMAGE$(EDITOR)      BITMAP  MOVEABLE PURE   "EXTICON.BMP"
+#else
+EXO_IMAGE               BITMAP  MOVEABLE PURE   "EXTICON.BMP"
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_ACTIONS$(EDITOR) MENU DISCARDABLE 
+#else
+MN_ACTIONS MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Set width",                   AID_actSetWidth
+        MENUITEM "Set height",                  AID_actSetHeight
+        MENUITEM SEPARATOR
+        MENUITEM "Set zoom value",              AID_actSetZoomValue
+        MENUITEM "Set offset",                  AID_actSetOffset
+        POPUP "Display settings"
+        BEGIN
+            MENUITEM "Set to Panorama",             AID_actSetPanorama
+            MENUITEM "Set to Perspective",          AID_actSetPerspective
+            MENUITEM "Set to Sine Wave",            AID_actSetSineWave
+            MENUITEM "Set to Custom",               AID_actSetCustom
+            MENUITEM "Set to Sine Offset",          AID_actSetSineOffset
+            MENUITEM "Set to Custom Offset",        AID_actSetCustomOffset
+            MENUITEM SEPARATOR
+            MENUITEM "Set number of sine waves",    AID_actSetNumWaves
+            MENUITEM SEPARATOR
+            MENUITEM "Set Horizontal",              AID_actSetHorizontal
+            MENUITEM "Set Vertical",                AID_actSetVertical
+            MENUITEM SEPARATOR
+            MENUITEM "Perspective Left/Top",        AID_actSetLeftTop
+            MENUITEM "Perspective Right/Bottom",    AID_actSetRightBottom
+            MENUITEM SEPARATOR
+            MENUITEM "Set resampling on",           AID_actSetResampleOn
+            MENUITEM "Set resampling off",          AID_actSetResampleOff
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Set 'custom' array value",    AID_actSetCustomValue
+        MENUITEM SEPARATOR
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_EXPRESSIONS$(EDITOR) MENU DISCARDABLE 
+#else
+MN_EXPRESSIONS MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Get width",                   EID_expGetWidth
+        MENUITEM "Get height",                  EID_expGetHeight
+        MENUITEM SEPARATOR
+        MENUITEM "Get zoom value",              EID_expGetZoomValue
+        MENUITEM "Get offset value",            EID_expGetOffset
+        MENUITEM "Get num sine waves",          EID_expNumWaves
+        MENUITEM SEPARATOR
+        MENUITEM "Get custom zoom at index",    EID_expGetCustom
+        MENUITEM SEPARATOR
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_CONDITIONS$(EDITOR) MENU DISCARDABLE 
+#else
+MN_CONDITIONS MENU DISCARDABLE 
+#endif
+BEGIN
+    MENUITEM "",                            65535
+END
+#endif
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""ccx.h""\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    KPX_MARK                "MF2"
+    KPX_NAME                "Perspective"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actSetZoomValue     "Set zoom value: %0"
+    AP0ID_actSetZoomValue   "Zoom value"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EID_expGetZoomValue     "ZoomValue("
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actSetCustom        "Set to Custom"
+    AID_actSetNumWaves      "Set number of sine waves = %0"
+    AP0ID_actSetNumWaves    "Set the number of waves"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actSetOffset        "Set offset to = %0"
+    AP0ID_actSetOffset      "Set the offset value for some of the effects"
+    AID_actSetHorizontal    "Set Horizontal"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actSetLeftTop       "Set Left/Top"
+    AID_actSetRightBottom   "Set Right/Bottom"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actSetPanorama      "Set to Panorama"
+    AID_actSetPerspective   "Set to Perspective"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actSetVertical      "Set Vertical"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actSetSineWave      "Set to Sine Wave"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EID_expGetOffset        "Offset("
+    EID_expNumWaves         "NumWaves("
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actSetCustomValue   "Set custom zoom at %0 to = %1"
+    AP0ID_actSetCustomValue "Enter index value"
+    AP1ID_actSetCustomValue "Enter zoom value"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EID_expGetCustom        "CustomZoomAt("
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROP_TEXTTITLE      "Perspective Object"
+    IDS_PANORAMA            "Panorama"
+    IDS_PERSPECTIVE         "Perspective"
+    IDS_SINEWAVE            "Sine Wave"
+    IDS_CUSTOM              "Custom"
+    IDS_HORIZONTALDIR       "Horizontal"
+    IDS_VERTICALDIR         "Vertical"
+    IDS_RIGHTTOP            "Right/Top"
+    IDS_LEFTBOTTOM          "Left/Bottom"
+    IDS_DEFAULTVALUES       "Default values"
+    IDS_EFFECT              "Effect"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DIRECTION           "Direction"
+    IDS_ORIENTATION         "Orientation"
+    IDS_ZOOMVALUE           "Zoom value"
+    IDS_OFFSET              "Offset"
+    IDS_SINEWAVESNUM        "Sine waves"
+    IDS_QUALITY             "Resample (slow)"
+    IDS_SINEOFFSET          "Sine Offset"
+    IDS_CUSTOMOFFSET        "Custom Ofsset"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDST_OBJNAME            "Perspective Object"
+    IDST_AUTHOR             "Anders Riggelsen (Andos)"
+    IDST_COPYRIGHT          "Copyright © 2007 Anders Riggelsen"
+    IDST_COMMENT            "Can distort the background with the following effects:\nPerspective, Panorama, Sine Wave, Sine Offset, Custom and Custom Offset"
+    IDST_HTTP               "http://click.andersriggelsen.dk"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actSetWidth         "Set width to: %0"
+    AP0ID_actSetWidth       "Enter a new width in pixels:"
+    AID_actSetHeight        "Set height to: %0"
+    AP0ID_actSetHeight      "Enter a new height in pixels:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EID_expGetWidth         "Width("
+    EID_expGetHeight        "Height("
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actSetResampleOn    "Set resampling: on"
+    AID_actSetResampleOff   "Set resampling: off"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actSetSineOffset    "Set to Sine Offset"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actSetCustomOffset  "Set to Custom Offset"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
