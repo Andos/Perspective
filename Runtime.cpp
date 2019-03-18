@@ -255,7 +255,7 @@ short WINAPI DLLExport DisplayRunObject(LPRDATA rdPtr)
 
 	//TOP -> BOTTOM
 	if(Effect == PERSPECTIVE && rdPtr->Direction == VERTICAL && rdPtr->PerspectiveDir == LEFTRIGHTTOPBOTTOM)
-	for(int i = 0; i <= ImageWidth; i++)
+	for(int i = 0; i <= ImageHeight; i++)
 	{
 		int CurrentZoom = (i*Zoom)/ImageHeight;
 		float CurrentFactor = (float)((ImageWidth + CurrentZoom)/( ImageWidth+0.0));
@@ -276,7 +276,7 @@ short WINAPI DLLExport DisplayRunObject(LPRDATA rdPtr)
 
 	//TOP <- BOTTOM
 	if(Effect == PERSPECTIVE && rdPtr->Direction == VERTICAL && rdPtr->PerspectiveDir == RIGHTLEFTBOTTOMTOP)
-	for(int i = 0; i <= ImageWidth; i++)
+	for(int i = 0; i <= ImageHeight; i++)
 	{
 		int CurrentZoom = ((ImageHeight-i-1)*Zoom)/ImageHeight;
 		float CurrentFactor = (float)((ImageWidth + CurrentZoom)/( ImageWidth+0.0));
